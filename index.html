@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my Valentine?</title>
+   <link rel="stylesheet" href="style.css">
+  
+
+</head>
+
+<body>
+    <div class="contents">
+        <H1>Will You Be My Valentine?</H1>
+
+        <img id="cat" src="pics/cat.jpg" alt="Cat asking to be your valentine">
+        <img hidden id="toothless" src="pics/toothless-dancing-toothless.gif" alt="dancing toothless" srcset="">
+        <div class="answer-button-container">
+            <button id="yes-button" type="button" onclick="showToothless()">Yes</button>
+            <button id="no-button" type="button" onclick="clickedNo()">No</button>
+            <button hidden id="other-yes-button" type="button" onclick = "showToothless()">Yes</button>
+        </div>
+        <audio id="music" controls hidden>
+            <source  src="toothless-dancing.mp3" type="audio/mp3">
+        </audio>
+       
+    
+    </div>
+   
+      
+    
+<script src="script.js"></script>
+</body>
+
+</html>

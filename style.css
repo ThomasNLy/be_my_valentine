@@ -1,0 +1,22 @@
+.contents{
+    width: fit-content;
+    margin-left: auto;
+   margin-right:auto;
+}
+#cat{
+    margin-left: 5em;
+    width: 15em;
+    height: auto;
+}
+.answer-button-container{
+    width:auto;
+    display:flex;
+    flex-direction: row;
+
+    column-gap: 10px;
+
+    justify-content: center;
+    
+    /* margin-left: auto;
+    margin-right: auto; */
+}
