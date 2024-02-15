@@ -5,32 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will you be my Valentine?</title>
-   <link rel="stylesheet" href="style.css">
-  
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 
 <body>
+   
     <div class="contents">
-        <H1>Will You Be My Valentine?</H1>
+        <h1 id="no-message" hidden>No, Really?? Lets try again.</h1>
+        <h1>Will You Be My Valentine?</h1>
 
         <img id="cat" src="pics/cat.jpg" alt="Cat asking to be your valentine">
-        <img hidden id="toothless" src="pics/toothless-dancing-toothless.gif" alt="dancing toothless" srcset="">
+        <div id="toothless" hidden>
+            <img class="toothless-pic" src="pics/toothless-dancing-toothless.gif" alt="dancing toothless" srcset="">
+            <img class="fireworks-pic" src="pics/fireworks.gif" alt="fireworks exploding">
+        </div>
+
         <div class="answer-button-container">
             <button id="yes-button" type="button" onclick="showToothless()">Yes</button>
             <button id="no-button" type="button" onclick="clickedNo()">No</button>
-            <button hidden id="other-yes-button" type="button" onclick = "showToothless()">Yes</button>
+            <button hidden id="other-yes-button" type="button" onclick="showToothless()">Yes</button>
         </div>
         <audio id="music" controls hidden>
-            <source  src="toothless-dancing.mp3" type="audio/mp3">
+            <source src="toothless-dancing.mp3" type="audio/mp3">
         </audio>
-       
-    
+
+
     </div>
-   
-      
-    
-<script src="script.js"></script>
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

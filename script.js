@@ -27,20 +27,25 @@ let showToothless = () => {
 let noCounter = 0;
 function clickedNo() {
     let noButton = document.getElementById("no-button");
+    let noMessage = document.getElementById("no-message");
     let otherYes = document.getElementById("other-yes-button");
     let yesButton = document.getElementById("yes-button");
     noCounter += 1;
     console.log(noCounter);
     switch (noCounter) {
         case 1:
-            noButton.innerText = "Are you sure?";
+            noMessage.style.display = "block";
+            noMessage.style.visibility = "visible";
             break;
         case 2:
-            noButton.innerText = "Are you really sure?";
+            noMessage.innerText = "No Again? Are you really sure? Lets try again.";
             break;
         case 3:
-            noButton.innerText = "Are you really really sure??";
+            noMessage.innerText = "No? Are you really really sure?? \nLets try again.";
+            break;
         default:
+            noMessage.style.display = "none";
+            noMessage.style.visibility = "hidden";
             noButton.style.display = "none";
             noButton.style.visibility = "hidden";
             otherYes.style.display = "inline";
