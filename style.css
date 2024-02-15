@@ -23,6 +23,7 @@ body {
     }
 
     .toothless-pic {
+        position: absolute;
         width: 15em;
         left: 3em;
         top: 10em;
