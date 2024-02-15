@@ -25,7 +25,8 @@ body {
     .toothless-pic {
         position: absolute;
         width: 15em;
-        left: 3em;
+        left:50%;
+        transform: translateX(-50%);
         top: 10em;
     }
 
@@ -91,7 +92,8 @@ body {
     .toothless-pic {
         position: absolute;
         top: 15em;
-        left:37em;
+        left:50%;
+        transform: translateX(-50%);
         width: 20em;
     }
 
